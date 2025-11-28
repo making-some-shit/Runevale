@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShadowCore — Official Game Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #0c0c0c;
+            color: #fff;
+        }
+
+        /* HERO */
+        .hero {
+            position: relative;
+            height: 100vh;
+            background: url('https://images.unsplash.com/photo-1520975918318-3fcb134ba0ab?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .hero .overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.55);
+            backdrop-filter: blur(4px);
+        }
+        .hero-content {
+            position: relative;
+            text-align: center;
+        }
+        .hero-content h1 {
+            font-size: 5rem;
+            letter-spacing: 5px;
+            margin: 0;
+            font-weight: 800;
+            text-shadow: 0 0 20px rgba(255,255,255,0.4);
+        }
+        .hero-content p {
+            font-size: 1.3rem;
+            margin-top: 10px;
+            opacity: 0.9;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 30px;
+            background: rgba(255,255,255,0.15);
+            border: 1px solid rgba(255,255,255,0.3);
+            backdrop-filter: blur(6px);
+            border-radius: 12px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: rgba(255,255,255,0.3);
+        }
+
+        /* INFO SECTION */
+        .info {
+            padding: 80px 10%;
+            text-align: center;
+        }
+        .info h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        .info p {
+            max-width: 700px;
+            margin: auto;
+            opacity: 0.85;
+            line-height: 1.7rem;
+        }
+        .details {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 40px;
+            font-size: 1.2rem;
+        }
+
+        /* FEATURES */
+        .features {
+            padding: 70px 10%;
+            background: #111;
+            text-align: center;
+        }
+        .features h2 {
+            font-size: 2.3rem;
+        }
+        .features ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 25px;
+            font-size: 1.3rem;
+        }
+        .features li {
+            margin: 15px 0;
+            opacity: 0.9;
+        }
+
+        /* FOOTER */
+        footer {
+            padding: 20px;
+            text-align: center;
+            background: #0b0b0b;
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 3rem;
+            }
+            .details {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HERO SECTION -->
+    <header class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>SHADOWCORE</h1>
+            <p>An immersive cyber-action adventure.</p>
+            <a href="#info" class="btn">Learn More</a>
+        </div>
+    </header>
+
+    <!-- GAME INFO -->
+    <section id="info" class="info">
+        <h2>Game Overview</h2>
+        <p>ShadowCore is a futuristic action RPG set in the neon-lit city of Arcadia Prime. Engage in fast-paced combat, explore the massive open world, and uncover the truth behind the Shadow Protocol.</p>
+
+        <div class="details">
+            <div><strong>Release:</strong> TBA 2025</div>
+            <div><strong>Price:</strong> ₹1999</div>
+            <div><strong>Platforms:</strong> PC, PS5, Xbox Series X</div>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features">
+        <h2>Key Features</h2>
+        <ul>
+            <li>⚡ Fast-paced cyber combat</li>
+            <li>🌆 Open-world exploration</li>
+            <li>🎮 High-end next‑gen graphics</li>
+        </ul>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 ShadowCore Studios — All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
